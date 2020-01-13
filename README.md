@@ -1,16 +1,16 @@
 # tf-nms
 Repository with several custom CUDA NMS ops for Tensorflow.
 
-The code base liberally copies from Tensorflow  source and example code. In addition to CUDA, the code also uses CUB library.  The code base is primarily used for experimenting, hence has number of debug, printfs  etc are still active.  
+The code base liberally copies from Tensorflow  source and example code. In addition to CUDA, the code also uses CUB library.  The code base is primarily used for experimenting, hence has number of debug, printfs  etc still in place.  
 
 # building
-To build Tensorflow source is required, but a custom build is not. 
+To build, Tensorflow source is required, but a custom Tensorflow build is not. 
 ```
 make clean; make
 ````
 
 # running 
-Currently 2 algorithms are available (others are there. but not added to the CLI).  The algorithm called "v2" is the one found in Tensorflow 1.15.  The algorithm is an alternative algorithm that appears to have  runtime numbers on GPUs.
+Currently 2 algorithms are available (others are there, but not added to the CLI).  The algorithm called "v2" is the one found in Tensorflow 1.15.  The algorithm called "basic" is an alternative algorithm that appears to have better runtime numbers on GPUs.
 
 ```
 # tensorflow NMS  code
