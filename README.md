@@ -10,6 +10,7 @@ make clean; make
 ````
 
 # running 
+Currently 2 algorithms are available (others are there. but not added to the CLI).  The algorithm called "v2" is the one found in Tensorflow 1.15.  The algorithm is an alternative algorithm that appears to have  runtime numbers on GPUs.
 
 ```
 # tensorflow NMS  code
@@ -17,3 +18,8 @@ python ./customnms_test.py --algo v2
 # A simple custom NMS, that appears to be 2.4x better then the one in Tensorflow
 python ./customnms_test.py --algo basic 
 ```
+# performance
+The "basic" algorithm is about 2.4x faster than the "v2" algorithm found in Tensorflow 1.15.
+
+# references
+1. Reflections on Non Maximum Suppression (NMS), https://medium.com/@whatdhack/reflections-on-non-maximum-suppression-nms-d2fce148ef0a
