@@ -7,7 +7,7 @@ The code base liberally copies from Tensorflow  source and example code. In addi
 To build, Tensorflow source is required, but a custom Tensorflow build is not. 
 
 Requires: 
-  1. Nvidia cub headers ( make require customization of Makefile).
+  1. Nvidia cub headers ( probably requires customization of Makefile for your environment).
 
 ```
 make clean; make
